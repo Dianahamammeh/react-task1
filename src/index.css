@@ -1,0 +1,100 @@
+
+:root{
+  --primary:#000;
+  --secondary: rgb(24 24 27);
+  --border: rgba(63, 63,70,0.4);
+  --title:rgb(244 244 245);
+  --sub-tittle:rgb(161 161 170);
+  --bgHeader: rgb(39, 39,42);
+}
+
+
+.light{
+  --primary: #898282;
+  --secondary: rgb(202, 202, 212);
+  --border: rgba(63, 63,70,0.4);
+  --title:rgb(244 244 245);
+  --sub-tittle:rgb(161 161 170);
+  --bgHeader: rgb(39, 39,42);
+}
+
+body{
+  background-color: var(--primary);
+
+}
+
+*{
+  padding: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+html {box-sizing: border-box;}
+*, *:befor, *:after {box-sizing: inherit;}
+
+.container{
+  border: 2px solid var(--border);
+  /*border: 2px solid gray;*/
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  background-color: var(--secondary);
+  padding: 0 4rem;
+}
+
+.divider{
+  border-bottom: 1px solid var(--border) ;
+  /*border-bottom: 1px solid rgb(232, 220, 220) ;*/
+  padding-top: 22px ;
+  margin: 3rm 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+.flex{
+display: flex;
+}
+
+
+
+@media (max-width: 1000px) {
+  .container{
+    width: 88%;
+    padding: 0 1.7rem;
+  }
+
+@media (max-width: 500px) {
+  .container{
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+
+}
+
+}
+
+@media (max-width: 500px) {
+  main.flex{
+     flex-direction: column;
+     gap: 2.64;
+     align-items: center;
+
+
+}
+main section.left-section.flex{
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+}
+
+
